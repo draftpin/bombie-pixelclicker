@@ -247,10 +247,10 @@ Func findPixelByColor($hWnd, $expectedColor, $direction = "normal", $startPos = 
 	return false
     EndIf
 
-    Local $x1 = $pos[0]
-    Local $y1 = $pos[1]
-    Local $x2 = $pos[0] + $pos[2]
-    Local $y2 = $pos[1] + $pos[3]
+    Local $x1 = $pos[0] + 5
+    Local $y1 = $pos[1] + 5
+    Local $x2 = $pos[0] + $pos[2] - 5
+    Local $y2 = $pos[1] + $pos[3] - 5
 
     if IsArray($startPos) Then
 	$x1 = $startPos[0] - $radiusSubLeft
